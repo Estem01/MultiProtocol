@@ -23,12 +23,9 @@ class AddPlayerPacketTranslator{
         ($packet->buffer .= (\pack("g", $packet->headYaw ?? $packet->yaw)));
         Serializer::putItem($packet, $protocol, $packet->item->getItemStack(), $packet->item->getStackId());
         if($protocol >= ProtocolConstants::BEDROCK_1_18_30) {
-			$packet->putVarInt($packet->gameType);
-		}
+		$packet->putVarInt($packet->gameType);
+	}
         $packet->putEntityMetadata($packet->metadata);
-        if($protocol >= ProtocolConstants::BEDROCK_1_18_30) {
-			$packet->putVarInt($packet->gameMode);
-		}
         $packet->putUnsignedVarInt($packet->uvarint1);
         $packet->putUnsignedVarInt($packet->uvarint2);
         $packet->putUnsignedVarInt($packet->uvarint3);
