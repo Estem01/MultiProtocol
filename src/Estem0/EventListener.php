@@ -30,7 +30,7 @@ use pocketmine\utils\BinaryDataException;
 use function in_array;
 use function strlen;
 
-class EventListener implements Listener{
+class EventListener implements Listener {
 
     /** @var bool */
     public $cancel_send = false; // prevent recursive call
