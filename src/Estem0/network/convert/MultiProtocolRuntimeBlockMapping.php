@@ -26,7 +26,7 @@ class MultiProtocolRuntimeBlockMapping {
     private static $bedrockKnownStates = [];
 
     const PROTOCOL = [
-        ProtocolConstants::BEDROCK_1_16_220 => "_1_16_220",
+        ProtocolConstants::BEDROCK_1_19_0 => "_1_19_0",
         ProtocolConstants::BEDROCK_1_17_0 => "_1_17_0",
         ProtocolConstants::BEDROCK_1_17_10 => "_1_17_10",
         ProtocolConstants::BEDROCK_1_17_30 => "_1_17_30",
